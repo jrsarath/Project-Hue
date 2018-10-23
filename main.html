@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
-    <link rel="stylesheet" href="jquery-hex-colorpicker.css">
+    <link rel="stylesheet" href="https://jrsarath.github.io/Project-Hue/jquery-hex-colorpicker.css">
 
 </head>
 
@@ -117,16 +117,8 @@
             </span>
         </div>
       </div>
-		<!--div class="row">
+		<div class="row">
             <div class="col-sm-12 btn-group" role="group">
-              <div class="input-group">
-                <div class="col-sm-4">
-                  <input class="form-control" placeholder="Select Color" type="text" id="color-picker">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" name="FFD700" type="submit">Set Color</button>
-                  </span>
-                </div>
-              </div>
                 <button class="btn btn-default" name="FF0000" type="submit">Red</button>
                 <button class="btn btn-default" name="FFD700" type="submit">Gold</button>
                 <button class="btn btn-default" name="FFA500" type="submit">Orange</button>
@@ -141,7 +133,7 @@
                 <button class="btn btn-default" name="00FF00" type="submit">Green</button>
                 <button class="btn btn-default" name="FFFF00" type="submit">Yellow</button>
             </div>
-        </div-->
+        </div>
     </form>
 
 </div>
@@ -171,10 +163,12 @@
     </div>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-      <script src="jquery-hex-colorpicker.min.js"></script>
+      <script src="https://jrsarath.github.io/Project-Hue/jquery-hex-colorpicker.min.js"></script>
       <script type="text/javascript">
         $("#color-picker").hexColorPicker({
           "container":"dialog",
+          "size":7,
+      		"style":"hex",
         });
         $("#color-picker").change(function(){
           var color_val = $("#color-picker").val()
